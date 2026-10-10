@@ -1,6 +1,6 @@
 # Linux for 3DS - Installer
 
-Source reconstructed from `linux-installer.3dsx`. Pressing A copies the bundled files to:
+
 
 | RomFS file | SD destination |
 |---|---|
