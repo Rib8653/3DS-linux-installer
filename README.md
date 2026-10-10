@@ -1,13 +1,14 @@
-# 3DS-linux-installer
+# Linux for 3DS - Installer
 
+Source reconstructed from `linux-installer.3dsx`. Pressing A copies the bundled files to:
 
+| RomFS file | SD destination |
+|---|---|
+| zImage, nintendo3ds_ctr.dtb, nintendo3ds_ktr.dtb, arm9linuxfw.bin, initramfs.cpio.gz | `sdmc:/linux/` |
+| firm_linux_loader.firm | `sdmc:/luma/payloads/` |
 
-This is a .3dsx file that installs the linux bootchain straight on your 3DS with no additional setup. This does require a modded 3DS with luma custom firmware.
+## Build
 
-OG 3DS linux repository: https://github.com/linux-3ds/linux
+Requires devkitPro (devkitARM + libctru):
 
-# Installation
-
-
-
-Put the .3dsx file in the 3ds folder on your 3DS SD card. Launch the installer through the Homebrew Launcher. after you install, hold select while turning on your console. Power off the console, hold the start button and turn on the console, and then select firm_linux_loader in the luma firmware menu while turning on. The user is root, password is toor.
+    make            # -> linux-installer.3dsx
